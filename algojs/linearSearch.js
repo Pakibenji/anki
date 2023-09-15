@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.linearSearch = void 0;
-function linearSearch(n1, n2) {
-    for (var i = 0; i < n1.length; i++) {
-        if (n1[i] === n2) {
+function linearSearch(arr, searchedNumber) {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === searchedNumber) {
             return true;
         }
     }

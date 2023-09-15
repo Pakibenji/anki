@@ -5,22 +5,23 @@ function binarySearch(arr, searchedNumber) {
     var hi = arr.length;
     do {
         var middle = Math.floor(lo + (hi - lo) / 2);
-        var searchedValue = arr[middle];
+        var currentValue = arr[middle];
         console.log("middle:" + middle);
-        console.log("sv:" + searchedValue);
-        if (searchedValue === searchedNumber) {
+        if (currentValue === searchedNumber) {
             return true;
         }
-        else if (searchedValue > searchedNumber) {
+        else if (currentValue > searchedNumber) {
             hi = middle;
+            console.log("hi:" + hi);
         }
         else {
             lo = middle + 1;
+            console.log("lo:" + lo);
         }
     } while (lo < hi);
     return false;
 }
 exports.default = binarySearch;
-// console.log(binarySearch([0, 2, 59, 88], 100));
-console.log(binarySearch([0, 2, 59, 88], 88));
-console.log(binarySearch([2, 5, 85, 120], 2));
+console.log(binarySearch([0, 2, 59, 88, 90], 100));
+// console.log(binarySearch([0, 2, 59, 88], 88));
+// console.log(binarySearch([2, 5, 85, 120], 2));
