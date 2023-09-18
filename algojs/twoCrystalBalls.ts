@@ -1,7 +1,7 @@
 export default function two_crystal_balls(breaks: boolean[]): number {
+}
 
 const array1 = [
-  false,
   false,
   false,
   false,
@@ -70,8 +70,10 @@ const array4 = [
   true,
   true,
   true,
+  true,
+  true,
+  true,
 ];
-
 console.log(two_crystal_balls(array1));
 console.log(two_crystal_balls(array2));
 console.log(two_crystal_balls(array3));
