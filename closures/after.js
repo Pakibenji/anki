@@ -1,12 +1,12 @@
 function after(count, func) {
     var counter = 0;
-    function incrementCounter() {
+    function sayHello() {
         counter++;
         if (count === counter) {
             func();
         }
     }
-    return incrementCounter;
+    return sayHello;
 }
 // /*** Uncomment these to check your work! ***/
 var called = function () { console.log('hello'); };
